@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection History | TruthLens</title>
+    <!-- Use Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/history.css">
+</head>
+<body>
+    <div class="background-grid"></div>
+    <div class="glow-orb primary"></div>
+    <div class="glow-orb secondary"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-shield-halved"></i> TruthLens
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Detector</a>
+            <a href="history.html" class="active">History</a>
+        </div>
+    </nav>
+
+    <main class="container history-container">
+        <header class="app-header">
+            <h1>Detection <span class="highlight">History</span></h1>
+            <p>Review past predictions and logged queries from our advanced AI model.</p>
+        </header>
+
+        <div class="glass-panel main-panel">
+            <div class="history-table-wrapper">
+                <div id="loadingHistory" class="loader center-loader"></div>
+                <table class="history-table hidden" id="historyTable">
+                    <thead>
+                        <tr>
+                            <th>Date & Time</th>
+                            <th>Headline / Text</th>
+                            <th>Prediction</th>
+                            <th>Confidence</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyBody">
+                        <!-- Rows injected via JS -->
+                    </tbody>
+                </table>
+                <div id="noHistory" class="hidden text-center">
+                    <p>No predictions have been made yet.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TruthLens Project. Built for final year presentation.</p>
+    </footer>
+
+    <script src="js/history.js"></script>
+</body>
+</html>

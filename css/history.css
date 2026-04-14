@@ -1,0 +1,73 @@
+.history-container {
+    max-width: 1200px;
+}
+
+.history-table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.history-table th {
+    padding: 1rem;
+    border-bottom: 2px solid var(--card-border);
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.history-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--card-border);
+    color: var(--text-primary);
+    vertical-align: top;
+}
+
+.history-table tr:last-child td {
+    border-bottom: none;
+}
+
+.history-text {
+    max-width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.prediction-badge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.badge-fake {
+    background: rgba(255, 71, 87, 0.2);
+    color: var(--fake-color);
+    border: 1px solid var(--fake-color);
+}
+
+.badge-real {
+    background: rgba(46, 213, 115, 0.2);
+    color: var(--real-color);
+    border: 1px solid var(--real-color);
+}
+
+.center-loader {
+    margin: 3rem auto;
+    width: 40px;
+    height: 40px;
+    border-width: 4px;
+}
+
+.text-center {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+}

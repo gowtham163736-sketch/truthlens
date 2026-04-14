@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruthLens | AI Fake News Detector</title>
+    <!-- Use Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="background-grid"></div>
+    <div class="glow-orb primary"></div>
+    <div class="glow-orb secondary"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-shield-halved"></i> TruthLens
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Detector</a>
+            <a href="history.html">History</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="app-header">
+            <h1>Validate the <span class="highlight">Truth</span></h1>
+            <p>Paste an article or headline below. Our advanced AI model will analyze linguistic patterns, source credibility, and contextual integrity to verify authenticity.</p>
+        </header>
+
+        <div class="glass-panel main-panel">
+            <div class="input-container">
+                <textarea id="newsInput" placeholder="Enter the news headline or article text here for analysis..." rows="6"></textarea>
+                <div class="character-count"><span id="charCount">0</span> words</div>
+            </div>
+
+            <button id="analyzeBtn" class="primary-btn">
+                <span class="btn-text">Analyze Content</span>
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <div class="loader" id="btnLoader" style="display: none;"></div>
+            </button>
+
+            <div id="resultContainer" class="result-container hidden">
+                <div class="result-card">
+                    <div class="result-header">
+                        <i id="resultIcon" class="fa-solid fa-circle-check"></i>
+                        <h2 id="resultTitle">Analysis Complete</h2>
+                    </div>
+                    <div class="result-body">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="confidenceBar"></div>
+                        </div>
+                        <p class="confidence-text">Confidence Level: <strong id="confidenceScore">0%</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="features-grid">
+            <div class="glass-panel feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-server"></i></div>
+                <h3>Real-Time API</h3>
+                <p>Lightning-fast model inference directly connected via our backend architecture.</p>
+            </div>
+            <div class="glass-panel feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-cube"></i></div>
+                <h3>3D Visualization</h3>
+                <p>Explore the data propagation algorithms in an interactive 3D environment.</p>
+            </div>
+            <div class="glass-panel feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
+                <h3>Deep Learning</h3>
+                <p>Powered by advanced NLP vectorization techniques and logistic regression.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TruthLens Project. Built for final year presentation.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
