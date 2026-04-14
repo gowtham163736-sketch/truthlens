@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const noHistory = document.getElementById('noHistory');
 
     try {
-        const response = await fetch('http://localhost:5000/api/history');
+        const response = await fetch('https://truthlens-84rd.onrender.com/api/history');
         if (!response.ok) throw new Error('Failed to fetch history');
         
         const data = await response.json();
