@@ -1,6 +1,6 @@
 // API module for communicating with the Flask backend
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://truthlens-84rd.onrender.com/api';
 
 class FakeNewsAPI {
     /**
